@@ -4,3 +4,6 @@ __pycache__/
 .vscode/
 eval/
 train/
+ridge_predictions.csv
+xgboost_predictions.csv
+rf_predictions.csv

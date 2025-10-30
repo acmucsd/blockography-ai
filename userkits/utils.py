@@ -1,5 +1,7 @@
 import os
 import cv2
+import numpy as np
+import pandas as pd
 
 def load_train_data(data_dir='../train'):
     X = []
@@ -27,5 +29,8 @@ def load_eval_data(data_dir='../eval'):
         X.append(img)
     return X
     
-def save_predictions(predictions, output_file='predictions.txt'):
+def save_predictions(predictions, output_file='predictions.csv'):
+    df = pd.DataFrame({"id": np.arange(1, len(predictions) + 1), "prediction": predictions})
+    df.to_csv(output_file, index=False)
+    print(f"Saved {output_file}")
     return
