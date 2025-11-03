@@ -63,7 +63,7 @@ Create environment and install required package:
 
 ```shell
 conda env create -f environment.yml
-conda activate
+conda activate ai-comp-env
 ```
 
 ⚠️ During the competition, if you want to install other packages, you can use either conda or pip to install. For example:
