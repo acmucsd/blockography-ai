@@ -115,6 +115,8 @@ conda install numpy
 
 ### VS Code Setup
 
+If you have never used Git in Visual Studio Code, read through this documentation: <https://code.visualstudio.com/docs/sourcecontrol/intro-to-git>
+
 After using VS Code to open the repository, open `rf.ipynb`, click "Select Kernel" on the top right. If your VS Code doesn't have Python and Jupyter extensions, click "Install/Enable suggested extensions." After the extensions are installed, click "Select Kernel" again, and choose "Python Environments" and then "ai-comp-dev" on the top command bar. After the kernel is set, run the first code block. If it runs successfully, you are good to go!
 
 ### Download Data
@@ -177,5 +179,21 @@ On the website portal, you will see the public score of your submission, which i
 
 ## Resources
 
+Are you a beginner to Python? Check out these tutorials: <https://www.w3schools.com/python/>
+
 - [Feature Engineering for Image Classification](https://medium.com/data-science/feature-engineering-with-image-data-14fe4fcd4353) (you need to login to Medium)
 - [ACM AI School #1 Slide](https://acmurl.com/ai-school-1-slides)
+
+
+***What is feature engineering?***
+
+Classical machine learning focuses on algorithms like logistic regression, support vector machines, and decision trees. These require manual feature selection, or extracting features from data to use in training a model. Feature selection and feature engineering is part of preprocessing (cleaning, organizing, and transforming raw data into a clean and structured format that a model can use).
+
+Choosing the right features can have a huge impact on model accuracy. For example, let’s say you want to identify the breed of dogs. The features you are told in advance to look for are the number of legs each dog has, the color of its nose, and the sound of its bark. The last two features might be a little helpful, but even with a great classification model you’re not really going to get anywhere. Some better features could be coat color, average size/weight, or temperament. With strong features like these, recognizing certain breeds becomes much easier!
+
+Now imagine if you had to keep track of all 6 aforementioned features, and also average max speed, eye color, type of coat, snout shape, number of teeth, number of eyes, sound of bark… at a certain point, it becomes difficult and taxing to keep track of all of these traits. Feature selection is when you select only the most important features and prune out the rest to improve performance. 
+
+For image classification, we can build features from the pixels in our images. A grayscale image (black and white) can be represented as a 2D array of numbers (pixel brightness). A color image has 3 channels (Red, Green, Blue), so it’s a 3D array (height × width × 3).
+
+We have provided you with some features in `userkits/features.py`. Get creative and figure out what combination of features work best!
+
