@@ -121,8 +121,8 @@ After using VS Code to open the repository, open `rf.ipynb`, click "Select Kerne
 
 You need to download data from Google Drive here:
 
-- train_data: <https://drive.google.com/drive/folders/12ZZKnWFAvVhDVx37DvqizEtQ19LURluD?usp=drive_link>
-- eval_data: <https://drive.google.com/drive/folders/1UAuCqjCoODF6vPLM80FFADENi17nYzre?usp=drive_link>
+- train_data: <https://drive.google.com/drive/folders/12ZZKnWFAvVhDVx37DvqizEtQ19LURluD?usp=sharing>
+- eval_data: <https://drive.google.com/drive/folders/1Ehg7rtya5xwpzxG4q68F2AT6DVBjRhEo>
 
 You then need to unzip the download zip file and extract it in the root of this directory (e.g. `/Users/<username>/blockography-ai` in MacOS). Make sure `train_data` and `eval_data` are stored in the root level or you'll have path issue when you run the notebooks.
 
@@ -134,9 +134,9 @@ We have provided with starter notebooks using classic machine learning models, s
 
 ### Deep Learning with PyTorch
 
-While we primarily encourage you to focus on feature engineering and 'classical' machine learning models, we understand that deep learning models can also be used to solve this problem. You're welcome to use other models including deep learning models like convolutional neural networks (CNN) and multi-layer perceptrons (MLP). 
+While we primarily encourage you to focus on feature engineering and 'classical' machine learning models, we understand that deep learning models can also be used to solve this problem. You're welcome to use other models including deep learning models like convolutional neural networks (CNN) and multi-layer perceptrons (MLP).
 
-If you'd like to use deep learning models, we recommend using PyTorch, as we've provided a dataset and starter code. 
+If you'd like to use deep learning models, we recommend using PyTorch, as we've provided a dataset and starter code.
 
 **Few things to note:**
 
@@ -147,7 +147,7 @@ If you'd like to use deep learning models, we recommend using PyTorch, as we've 
   ```
 
 - To help with this, we've also provided a rough "scaffold" notebook that you can use as a starting point (see `userkits/pytorch.ipynb`)
-- However, unlike the starter notebooks for classical machine learning, you'll need to implement the model yourself. 
+- However, unlike the starter notebooks for classical machine learning, you'll need to implement the model yourself.
 - We may not be able to help you with the setup of dependencies and implementations.
 
 ## Submission and Evaluation
